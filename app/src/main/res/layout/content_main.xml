@@ -12,26 +12,7 @@
 
 
 
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:hint="Enter Name"
-    android:id="@+id/name"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:hint="Enter Password"
-        android:id="@+id/password"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Enter"
-        android:onClick="enterButton"/>
 
 
 </LinearLayout>

@@ -26,24 +26,12 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        YoYo.with(Techniques.BounceIn)
-                .duration(1500)
-                .repeat(0)
-                .playOn(toolbar);
-
-
-        name = (EditText) findViewById(R.id.name);
-        password = (EditText) findViewById(R.id.password);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                YoYo.with(Techniques.BounceIn)
-                        .duration(1500)
-                        .repeat(0)
-                        .playOn(toolbar);
 
 
             }
@@ -72,24 +60,5 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void enterButton(View view) {
 
-        if (name.getText().toString().isEmpty()) {
-
-            //animation here
-
-            YoYo.with(Techniques.Tada)
-                    .duration(500)
-                    .repeat(0)
-                    .playOn(name);
-            YoYo.with(Techniques.Tada)
-                    .duration(500)
-                    .repeat(0)
-                    .playOn(password);
-
-
-        } else {
-            Toast.makeText(this, "name -" + name.getText().toString(), Toast.LENGTH_SHORT).show();
-        }
-    }
 }
